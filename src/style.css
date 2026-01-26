@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+img {
+  /* Esto ayuda a que no se vea blanco mientras cargan las imágenes */
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+}
