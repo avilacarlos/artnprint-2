@@ -21,10 +21,20 @@ const closeBtn = document.getElementById('close-modal');
 
 // 3. PLANTILLAS DE CONTENIDO (Secciones de bondades)
 const templateFisicas = `
-  <div class="space-y-6">
-    <h4 class="text-[#b34f83] font-[play] text-2xl font-bold italic">La elegancia de lo tangible</h4>
-    <p class="text-gray-600 text-sm leading-relaxed text-justify font-[one]">
-      No hay nada como la emoción de recibir un sobre, sentir la textura del papel fino y ver el brillo del foil dorado. Nuestras invitaciones físicas son piezas artesanales que tus invitados guardarán como un tesoro.
+  <div class="space-y-6 w-full px-6">
+    <h4 class="text-[#b34f83] font-[play] text-[1.75rem] font-bold uppercase">La elegancia de lo tangible</h4>
+    <p class="text-gray-500 text-[1.2rem]  text-justify font-[one]">
+      Creamos invitaciones únicas y personalizadas para todo tipo de evento, desde diseños originales y poco convencionales
+                que sorprenderán a tus invitados, hasta invitaciones discretas, elegantes y clásicas que reflejan el estilo de tu
+                evento.
+    </p>
+    <p class="text-gray-500 text-[1.2rem]  text-justify font-[one]">
+      Somos expertos y trabajaremos contigo para crear la invitación que se adapte a tus necesidades y refleje
+                el estilo y la personalidad de tu evento. Utilizamos materiales de alta calidad y técnicas clásicas y modernas de
+                impresión para asegurarnos de que tus invitaciones encantarán y dejaran una impresión duradera en tus invitados.
+    </p>
+    <p class="text-[#b34f83] text-[1.2rem]  text-justify font-[one]">
+      Estos son algunos ejemplos que podrian servirte de inspiracion para crear tu invitación ideal.
     </p>
     
     <!-- Galería de fotos de invitaciones físicas -->
@@ -43,31 +53,56 @@ const templateFisicas = `
 `;
 
 const templateDigitales = `
-  <div class="space-y-6">
-    <h4 class="text-[#b34f83] font-[play] text-2xl font-bold italic">Interactividad y Alcance</h4>
-    <p class="text-gray-600 text-sm leading-relaxed text-justify font-[one]">
-      Ideales para llegar a todos tus invitados al instante. Ecológicas, modernas y con funciones inteligentes que facilitan la organización de tu evento.
+  <div class="space-y-6 w-full px-6">
+    <h4 class="text-[#b34f83] font-[play] font-bold text-[1.75rem] uppercase">Interactividad y modernidad</h4>
+    <p class="text-gray-500 text-[1.2rem]  text-justify font-[one]">
+      Sabemos lo importante que es para ti que cada detalle de tu evento sea único y especial.
+    </p>
+    <p class="text-gray-500 text-[1.2rem]  text-justify font-[one]">
+      Estas invitaciones no solo te permiten ser más respetuoso con el medio ambiente,
+                    al eliminar el uso de papel, sino que también te brindan la oportunidad de diseñar algo
+                    verdaderamente personal y a la medida de tu estilo.
+    </p>
+    <p class="text-gray-500 text-[1.2rem]  text-justify font-[one]">
+      Con nuestras opciones digitales, puedes incluir animaciones, música, y enlaces interactivos,
+                    lo que hará que tus invitados sientan la emoción de tu evento desde el primer momento.
+    </p>
+     <p class="text-gray-500 text-[1.2rem]  text-justify font-[one]">
+      Además, no solo ahorras tiempo en la entrega, sino que también reduces costos, ya que no necesitas
+                    perder tiempo entregando las invitaciones personalmente. 
+    </p>
+     <p class="text-gray-500 text-[1.2rem]  text-justify font-[one]">
+Confía en nosotros para que tus invitaciones sean tan memorables como tu día especial.
     </p>
     
+    
+    
     <div class="bg-white p-4 rounded-2xl border border-[#b34f8320] shadow-inner">
-       <p class="text-[10px] uppercase tracking-tighter text-gray-400 mb-4 text-center font-bold">Bondades Digitales</p>
-       <div class="grid grid-cols-3 gap-2 text-center text-[10px] text-[#b34f83] font-bold uppercase">
+       <p class="text-[1.25rem] capitalize text-gray-500 mb-4 text-center">Bondades Digitales</p>
+       <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-4 text-[#b34f83] font-bold uppercase">
           <div class="flex flex-col items-center gap-1"><span class="text-lg">📍</span>Mapa</div>
           <div class="flex flex-col items-center gap-1"><span class="text-lg">📩</span>RSVP</div>
           <div class="flex flex-col items-center gap-1"><span class="text-lg">⏳</span>Cuenta</div>
        </div>
+       <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-4 text-[#b34f83] font-bold uppercase border-2 border-green-900">
+          <div class="flex flex-col items-center gap-1"><span class="text-lg">📍</span>Mapa</div>
+          <div class="flex flex-col items-center gap-1"><span class="text-lg">📩</span>RSVP</div>
+          <div class="flex flex-col items-center gap-1"><span class="text-lg">⏳</span>Cuenta</div>
+       </div>
+
+
     </div>
 
     <!-- Botones a Demos -->
     <div class="flex flex-col gap-3 pt-2">
-      <a href="#" class="flex justify-between items-center bg-gray-900 text-white px-6 py-4 rounded-xl text-xs font-bold uppercase tracking-widest active:scale-95 transition-all">
-        Ver Demo Boda <span>→</span>
+      <a href="https://bautizobasico.netlify.app/" class="flex self-center justify-center items-center bg-[#b34f83] text-white w-[75%] py-3 rounded-xl text-[1.25rem]  uppercase  active:scale-95 transition-all">
+        INVITACION BASICA 
       </a>
-      <a href="#" class="flex justify-between items-center bg-gray-900 text-white px-6 py-4 rounded-xl text-xs font-bold uppercase tracking-widest active:scale-95 transition-all">
-        Ver Demo XV Años <span>→</span>
+      <a href="https://sobre-fatima.netlify.app/" class="flex self-center justify-center items-center bg-[#b34f83] text-white w-[75%] py-3 rounded-xl text-[1.25rem]  uppercase  active:scale-95 transition-all">
+        INVITACION ESTANDAR 
       </a>
-      <a href="#" class="flex justify-between items-center bg-gray-900 text-white px-6 py-4 rounded-xl text-xs font-bold uppercase tracking-widest active:scale-95 transition-all">
-        Ver Demo Infantil <span>→</span>
+      <a href="https://pruebaboda.netlify.app/" class="flex self-center justify-center items-center bg-[#b34f83] text-white w-[75%] py-3 rounded-xl text-[1.25rem]  uppercase  active:scale-95 transition-all">
+        INVITACION PREMIUM
       </a>
     </div>
   </div>
@@ -91,7 +126,7 @@ async function cargarGaleria() {
             <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-white via-white/80 to-transparent font-[one]">
                 <span class="px-3 py-1 bg-[#b34f83] text-[10px] text-white uppercase tracking-widest rounded-full font-bold">Recién entregado</span>
                 <h3 class="text-black text-[1.35rem] font-bold leading-tight mt-2">${trabajo.title}</h3>
-                <p class="text-gray-600 text-sm font-medium mt-1 max-w-[85%]">${trabajo.description}</p>
+                <p class="text-gray-600 text-sm font-medium mt-1 max-w-[75%]">${trabajo.description}</p>
             </div>
         `;
         track.appendChild(slide);
