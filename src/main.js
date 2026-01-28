@@ -77,18 +77,63 @@ Confía en nosotros para que tus invitaciones sean tan memorables como tu día e
     
     
     
-    <div class="bg-white p-4 rounded-2xl border border-[#b34f8320] shadow-inner">
+    <div class="bg-white p-4 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col justify-center items-center">
        <p class="text-[1.25rem] capitalize text-gray-500 mb-4 text-center">Bondades Digitales</p>
-       <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-4 text-[#b34f83] font-bold uppercase">
-          <div class="flex flex-col items-center gap-1"><span class="text-lg">📍</span>Mapa</div>
-          <div class="flex flex-col items-center gap-1"><span class="text-lg">📩</span>RSVP</div>
-          <div class="flex flex-col items-center gap-1"><span class="text-lg">⏳</span>Cuenta</div>
-       </div>
-       <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-4 text-[#b34f83] font-bold uppercase border-2 border-green-900">
-          <div class="flex flex-col items-center gap-1"><span class="text-lg">📍</span>Mapa</div>
-          <div class="flex flex-col items-center gap-1"><span class="text-lg">📩</span>RSVP</div>
-          <div class="flex flex-col items-center gap-1"><span class="text-lg">⏳</span>Cuenta</div>
-       </div>
+       
+       
+
+<div class="flex  items-center w-[90%] mx-auto py-4 ">
+  
+  
+   <!-- Contenedor entrega-->
+  <div class="flex-shrink-0 w-14 h-14 flex justify-center items-center ">
+    <img class="size-full object-contain" src="maps.svg" alt="icono">
+  </div>
+<div class="flex-1 flex flex-col justify-center items-center ">
+    <div class=" uppercase text-[1.3rem] font-bold self-center text-[#b34f83] pb-1 leading-none">
+      entrega rapida
+    </div>
+    <div class="uppercase text-gray-500 text-[1rem] leading-tight self-center text-center pt-1">
+      podemos entregar <br> entre 3 y 8 dias
+    </div>
+  </div>
+  </div>
+
+
+<div class="flex  items-center w-[90%] mx-auto py-4 ">
+   <!-- Contenedor entrega-->
+  <div class="flex-shrink-0 w-14 h-14 flex justify-center items-center ">
+    <img class="size-full object-contain" src="maps.svg" alt="icono">
+  </div>
+<div class="flex-1 flex flex-col justify-center items-center ">
+    <div class=" uppercase text-[1.3rem] font-bold self-center text-[#b34f83] pb-1 leading-none">
+      diseño
+    </div>
+    <div class="uppercase text-gray-500 text-[1rem] leading-tight self-center text-center pt-1">
+      Elige y personaliza la temática y estilo de tus invitaciones que mejor representen tu evento.
+    </div>
+  </div>
+  </div>
+
+  <div class="flex  items-center w-[90%] mx-auto py-4 ">
+   <!-- Contenedor entrega-->
+  <div class="flex-shrink-0 w-14 h-14 flex justify-center items-center ">
+    <img class="size-full object-contain" src="maps.svg" alt="icono">
+  </div>
+<div class="flex-1 flex flex-col justify-center items-center ">
+    <div class=" uppercase text-[1.3rem] font-bold self-center text-[#b34f83] pb-1 leading-none">
+      cuenta regresiva
+    </div>
+    <div class="uppercase text-gray-500 text-[1rem] leading-tight self-center text-center pt-1">
+      reloj en Tiempo real restante a la fecha y hora del evento.
+    </div>
+  </div>
+  </div>
+
+   
+
+       
+   
 
 
     </div>
@@ -183,18 +228,27 @@ function closeWhatsappModal() {
 }
 
 /**
- * INICIALIZACIÓN
+ * INICIALIZACIÓN  
  */
 document.addEventListener('DOMContentLoaded', () => {
     cargarGaleria();
     
     // Animación inicial de la máscara
-    if(document.getElementById('invitacion-masked')) {
-        gsap.fromTo("#invitacion-masked", 
-          { maskSize: "0%", webkitMaskSize: "0%", scale: 1.2 }, 
-          { maskSize: "100%", webkitMaskSize: "100%", scale: 1, duration: 2, ease: "power2.out", delay: 0.5 }
-        );
-    }
+if (document.getElementById('invitacion-masked')) {
+  let tl = gsap.timeline();
+
+  tl.fromTo("#invitacion-masked",
+    { maskSize: "0%", webkitMaskSize: "0%", scale: 1.2 },
+    { maskSize: "125%", webkitMaskSize: "125%", scale: 1, duration: 3.5, ease: "power2.out" }
+  )
+  .to("#invitacion-masked", 
+    { maskSize: "100%", webkitMaskSize: "100%", scale: 1, duration: 1, ease: "bounce.out" }
+  );
+}
+
+
+
+
 
     // Carga inicial de contenido dinámico
     dynamicContent.innerHTML = templateFisicas;
