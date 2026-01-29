@@ -36,12 +36,12 @@
   @apply bg-[linear-gradient(to_bottom,_white_0%,_white_70%,_transparent_100%)]
 }
 
-bor-pink {
+.bor-pink {
   @apply border-[#b34f83] border-2
 }
-bor-red {
+.bor-red {
   @apply border-red-950 border-2
 }
-bor-black {
+.bor-black {
   @apply border-black border-2
 }
