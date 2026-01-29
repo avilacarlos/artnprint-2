@@ -201,8 +201,8 @@ const templateDigitales = `
     </div>
 
     <!-- Botones a Demos -->
-    <p class="mr-4 p-3 self-center text-left w-[100%] [#b34f83] text-[1.75rem] font-[one] flex items-start  uppercase py-2 z-10">
-    ejemplos de nuestras invitaciones digitales
+    <p class="titulo-derecha">
+    ejemplos de nuestras invitaciones
         </p>
     <div class="flex flex-col gap-4  w-full items-center">
 
@@ -213,26 +213,27 @@ const templateDigitales = `
       <!-- Boton basico -->  
       <div class="w-full h-auto bg-[#ffffff50] p-4  rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
         
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
+        <p class="textos-btn-digital">
         Esta invitación se personaliza con los detalles del evento y puede incluir los personajes favoritos del festejado, creando una experiencia alegre y cercana.</p>
         
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify py-4 z-10">
+        <p class="textos-btn-digital">
          Perfecta para Bautizos, Primeras Comuniones y fiestas infantiles.</p>
 
-         <a href="https://sobre-fatima.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
+         <a href="https://sobre-fatima.netlify.app/" target="_blank" class="titulo-btn">
         Invitación Basica
         </a>
       </div>
+
       <!-- Boton estandar -->  
       <div class="w-full h-auto bg-[#ffffff50] p-4 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
         
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
+        <p class="textos-btn-digital">
         Ideal para quienes buscan un diseño más elaborado y emotivo, con animaciones suaves, transiciones encantadoras y una presentación envolvente.</p>
         
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify py-4 z-10">
+        <p class=" textos-btn-digital">
          Ofrece una experiencia cuidada y profesional, sin requerir los elementos más complejos de la opción premium. Es perfecta para Bodas y XV Años con pocos invitados donde se quiere transmitir calidez y estilo.</p>
 
-         <a href="https://sobre-fatima.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
+         <a href="https://sobre-fatima.netlify.app/" target="_blank" class="titulo-btn">
         Invitación Estandar
         </a>
       </div>
@@ -240,12 +241,12 @@ const templateDigitales = `
       <!-- Boton premium -->  
       <div class="w-full h-auto bg-[#ffffff50] p-4 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
         
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
+        <p class=" textos-btn-digital">
         La experiencia más completa, recomendada para Bodas y XV Años con muchos invitados.</p>
         
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify py-4 z-10">
+        <p class=" textos-btn-digital">
          Incluye efectos, animaciones avanzadas, música, formulario para confirmar asistencia, galeria de fotos, acceso a la mesa de regalos con tan solo un click, haciendo que cada invitado se sienta especial.</p>
-         <a href="https://pruebaboda.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
+         <a href="https://pruebaboda.netlify.app/" target="_blank" class="titulo-btn">
         Invitación Premium
         </a>
       </div>
@@ -270,9 +271,9 @@ async function cargarGaleria() {
         slide.innerHTML = `
             <img src="${publicUrl}" class="w-full h-full object-cover" alt="${trabajo.title}">
             <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-white via-white/80 to-transparent font-[one]">
-                <span class="px-3 py-1 bg-[#b34f83] text-[10px] text-white uppercase tracking-widest rounded-full font-bold">Recién entregado</span>
-                <h3 class="text-black text-[1.35rem] font-bold leading-tight mt-2">${trabajo.title}</h3>
-                <p class="text-gray-600 text-sm font-medium mt-1 max-w-[75%]">${trabajo.description}</p>
+                <span class="px-4 py-2 bg-[#b34f83] text-[.75rem] text-white uppercase tracking-widest rounded-full font-bold">Recién entregado</span>
+                <h3 class="text-black text-[1.5rem] font-bold leading-tight mt-2">${trabajo.title}</h3>
+                <p class="text-gray-600 text-[1.1rem] font-medium mt-1 max-w-[75%]">${trabajo.description}</p>
             </div>
         `;
         track.appendChild(slide);
@@ -340,10 +341,10 @@ if (document.getElementById('invitacion-masked')) {
 
   tl.fromTo("#invitacion-masked",
     { maskSize: "0%", webkitMaskSize: "0%", scale: 1.2 },
-    { maskSize: "125%", webkitMaskSize: "125%", scale: 1, duration: 3.5, ease: "power2.out" }
+    { maskSize: "225%", webkitMaskSize: "=225%", scale: 1, duration: 3.5, ease: "power2.out" }
   )
   .to("#invitacion-masked", 
-    { maskSize: "100%", webkitMaskSize: "100%", scale: 1, duration: 1, ease: "bounce.out" }
+    { maskSize: "125%", webkitMaskSize: "=125%", scale: 1, duration: 1, ease: "bounce.out" }
   );
 }
 
