@@ -206,39 +206,48 @@ const templateDigitales = `
         </p>
     <div class="flex flex-col gap-4  w-full items-center">
 
-        <!-- Boton basica -->  
     
-      <div class="w-full h-auto bg-[#ffffff50] p-4 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
-        <a href="https://bautizobasico.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
-        Invitación Básica 
-        </a>
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
-        Esta invitación se personaliza con los detalles del evento y puede incluir los personajes favoritos del festejado, creando una experiencia alegre y cercana.
-        Perfecta para Bautizos, Primeras Comuniones y fiestas infantiles.
-      </div>
+
+
       
+      <!-- Boton basico -->  
+      <div class="w-full h-auto bg-[#ffffff50] p-4  rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
+        
+        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
+        Esta invitación se personaliza con los detalles del evento y puede incluir los personajes favoritos del festejado, creando una experiencia alegre y cercana.</p>
+        
+        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify py-4 z-10">
+         Perfecta para Bautizos, Primeras Comuniones y fiestas infantiles.</p>
+
+         <a href="https://sobre-fatima.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
+        Invitación Basica
+        </a>
+      </div>
       <!-- Boton estandar -->  
       <div class="w-full h-auto bg-[#ffffff50] p-4 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
-        <a href="https://sobre-fatima.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
-        Invitación Estandar
-        </a>
+        
         <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
         Ideal para quienes buscan un diseño más elaborado y emotivo, con animaciones suaves, transiciones encantadoras y una presentación envolvente.</p>
         
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
+        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify py-4 z-10">
          Ofrece una experiencia cuidada y profesional, sin requerir los elementos más complejos de la opción premium. Es perfecta para Bodas y XV Años con pocos invitados donde se quiere transmitir calidez y estilo.</p>
+
+         <a href="https://sobre-fatima.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
+        Invitación Estandar
+        </a>
       </div>
       
       <!-- Boton premium -->  
       <div class="w-full h-auto bg-[#ffffff50] p-4 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
-        <a href="https://pruebaboda.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
-        Invitación Premium
-        </a>
+        
         <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
         La experiencia más completa, recomendada para Bodas y XV Años con muchos invitados.</p>
         
-        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify pt-4 z-10">
+        <p class=" w-[85%] text-gray-500 text-[1.2rem] font-[one] flex items-center text-justify py-4 z-10">
          Incluye efectos, animaciones avanzadas, música, formulario para confirmar asistencia, galeria de fotos, acceso a la mesa de regalos con tan solo un click, haciendo que cada invitado se sienta especial.</p>
+         <a href="https://pruebaboda.netlify.app/" target="_blank" class="flex justify-center items-center bg-[#b34f83] text-white w-[85%] py-4 rounded-2xl text-[1.1rem] font-bold uppercase shadow-lg active:scale-95 transition-all">
+        Invitación Premium
+        </a>
       </div>
     </div>
   </div>      
