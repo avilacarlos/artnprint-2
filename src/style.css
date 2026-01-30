@@ -45,3 +45,10 @@
 .bor-black {
   @apply border-black border-2
 }
+
+.item-titulo{
+  @apply uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1
+}
+.item-texto{
+  @apply uppercase text-gray-500 text-[0.85rem] leading-tight font-medium
+}

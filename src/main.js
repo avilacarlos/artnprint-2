@@ -81,14 +81,14 @@ const templateDigitales = `
     <div class="w-full h-auto bg-white p-5 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
        <p class="text-[1.1rem] uppercase tracking-widest text-gray-400 mb-6 text-center font-bold">Bondades Digitales</p>
        
-       <!-- ITEM 1 -->
+       <!-- ITEM ENTREGA -->
        <div class="flex items-start w-full mb-6 gap-4">
           <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
             <img class="w-full h-full object-contain" src="cal.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0"> <!-- min-w-0 es clave para que el texto respete el ancho -->
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">Entrega rápida</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">Podemos entregar entre 3 y 8 días</div>
+            <div class="item-titulo">Entrega rápida</div>
+            <div class="item-texto">Podemos entregar entre 3 y 8 días</div>
           </div>
        </div>
 
@@ -98,8 +98,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">TEMATICA</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">
+            <div class="item-titulo">TEMATICA</div>
+            <div class="item-texto">
             Elige la temática que mejor refleje tu evento: romántica, moderna, clásica o festiva.</div>
           </div>
        </div>
@@ -110,8 +110,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="reloj.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">Cuenta regresiva</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">Reloj en tiempo real para la fecha y hora del evento.</div>
+            <div class="item-titulo">Cuenta regresiva</div>
+            <div class="item-texto">Reloj en tiempo real para la fecha y hora del evento.</div>
           </div>
        </div>
 
@@ -121,8 +121,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="gps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">Ubicación GPS</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">Indicaciones exactas para llegar a la iglesia y al salón.</div>
+            <div class="item-titulo">Ubicación GPS</div>
+            <div class="item-texto">Indicaciones exactas para llegar a la iglesia y al salón.</div>
           </div>
        </div>
        
@@ -132,8 +132,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">RSVP</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">
+            <div class="item-titulo">RSVP</div>
+            <div class="item-texto">
             Tendras todas las confirmaciones de tus invitados en un solo lugar.</div>
           </div>
        </div>
@@ -144,8 +144,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">DRESS CODE</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">
+            <div class="item-titulo">DRESS CODE</div>
+            <div class="item-texto">
             Informa a tus invitados del tipo de vestimenta que deben usar.</div>
           </div>
        </div>
@@ -156,8 +156,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">FOTOGRAFÍAS</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">
+            <div class="item-titulo">FOTOGRAFÍAS</div>
+            <div class="item-texto">
             La invitación puede llevar fotografías para dar un toque íntimo y especial a tu invitación.</div>
           </div>
        </div>
@@ -168,8 +168,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">MUSICA</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">
+            <div class="item-titulo">MUSICA</div>
+            <div class="item-texto">
             Agrega la canción perfecta para ambientar tu invitación.</div>
           </div>
        </div>
@@ -180,8 +180,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">PERSONALIZACION</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">
+            <div class="item-titulo">PERSONALIZACION</div>
+            <div class="item-texto">
             Cada invitación lleva el nombre de tu invitado, creando un detalle exclusivo y especial.</div>
           </div>
        </div>
@@ -192,8 +192,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">GALERIA COMPARTIDA</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">
+            <div class="item-titulo">GALERIA COMPARTIDA</div>
+            <div class="item-texto">
             Un espacio exclusivo donde tus invitados suben y disfrutan las fotos del gran día.</div>
           </div>
        </div>
@@ -204,8 +204,8 @@ const templateDigitales = `
             <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
           </div>
           <div class="flex-1 min-w-0">
-            <div class="uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1">ENVIO ILIMITADO</div>
-            <div class="uppercase text-gray-500 text-[0.85rem] leading-tight font-medium">
+            <div class="item-titulo">ENVIO ILIMITADO</div>
+            <div class="item-texto">
             Envía tu invitación por WhatsApp tantas veces como quieras, sin restricciones.</div>
           </div>
        </div>
