@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
+/* 1. FUENTES */
 @font-face {
   font-family: 'play';
   src: url('/playfair.ttf') format('truetype');
@@ -18,37 +16,3 @@
   font-style: normal;
 }
 
-.titulo-btn {
-  @apply flex justify-center  items-center bg-[#b34f83] text-white w-[85%] py-2 mt-3 mb-2 rounded-2xl text-[1.35rem] uppercase shadow-lg active:scale-95 transition-all
-}
-
-.textos-btn-digital {
-  @apply space-y-4 text-gray-500 text-[1.1rem] text-justify font-[one]  py-2 text-balance
-}
-.titulo-izquierda {
-  @apply text-[#b34f83] font-[play] font-bold text-[1.75rem] uppercase leading-tight
-} 
-.titulo-derecha {
-  @apply text-[#b34f83] self-end text-end font-[play] font-bold text-[1.75rem] uppercase leading-tight 
-} 
-
-.degradado {
-  @apply bg-[linear-gradient(to_bottom,_white_0%,_white_70%,_transparent_100%)]
-}
-
-.bor-pink {
-  @apply border-[#b34f83] border-2
-}
-.bor-red {
-  @apply border-red-950 border-2
-}
-.bor-black {
-  @apply border-black border-2
-}
-
-.item-titulo{
-  @apply uppercase text-[1.1rem] font-black text-[#b34f83] leading-none mb-1
-}
-.item-texto{
-  @apply uppercase text-gray-500 text-[0.85rem] leading-tight font-medium
-}
