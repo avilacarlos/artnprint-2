@@ -1,39 +1,57 @@
 import gsap from 'gsap';
-import { templateFisicas, templateDigitales } from './templates';
-import { cargarGaleriaDinamica } from './galleries';
+import { templateFisicas, templateDigitales, templateVasos } from './templates';
+import { inicializarGaleriaPremium } from './modularGalleries';
 
-let state = { fisicasLoaded: false, digitalesLoaded: false };
+let seccionesCargadas = {};
 
 export async function toggleSection(type) {
-    const isFisicas = type === 'fisicas';
-    const container = document.getElementById(isFisicas ? 'container-fisicas' : 'container-digitales');
-    const content = document.getElementById(isFisicas ? 'content-fisicas' : 'content-digitales');
-    const icon = document.getElementById(isFisicas ? 'icon-fisicas' : 'icon-digitales');
+    const container = document.getElementById(`container-${type}`);
+    const content = document.getElementById(`content-${type}`);
+    const icon = document.getElementById(`icon-${type}`);
+
+    if (!container || !content) return;
 
     if (!container.classList.contains('open')) {
-        if (isFisicas && !state.fisicasLoaded) {
-            content.innerHTML = templateFisicas;
-            await cargarGaleriaDinamica('track-fisicas', 'fisicas');
-            state.fisicasLoaded = true;
-        } else if (!isFisicas && !state.digitalesLoaded) {
-            content.innerHTML = templateDigitales;
-            state.digitalesLoaded = true;
+        
+        if (!seccionesCargadas[type]) {
+            // ASIGNACIÓN SIMPLE DE TEMPLATES
+            if (type === 'fisicas') {
+                content.innerHTML = templateFisicas;
+                await inicializarGaleriaPremium('track-fisicas', 'fisicas');
+            } 
+            else if (type === 'digitales') {
+                content.innerHTML = templateDigitales;
+            }
+            else if (type === 'vasos') {
+                content.innerHTML = templateVasos;
+                await inicializarGaleriaPremium('track-vasos', 'vasos');
+            }
+            // Agrega más "else if" aquí para tazas, abanicos, etc.
+
+            seccionesCargadas[type] = true;
         }
 
         container.classList.add('open');
         if (icon) icon.style.transform = "rotate(180deg)";
         
         setTimeout(() => {
-            content.querySelector('h4')?.scrollIntoView({ behavior: 'smooth' });
+            const yOffset = -100;
+            const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
         }, 300);
+
     } else {
         container.classList.remove('open');
         if (icon) icon.style.transform = "rotate(0deg)";
     }
 }
 
-// ESTA ES LA FUNCIÓN QUE TE ESTÁ DANDO ERROR. 
-// Asegúrate de que tenga el "export" al principio.
+
+
+
+/**
+ * Configuración del Modal de WhatsApp
+ */
 export function setupModal() {
     const modal = document.getElementById('modal');
     const modalOverlay = document.getElementById('modal-overlay');
@@ -41,21 +59,24 @@ export function setupModal() {
     const btn = document.getElementById('whatsapp-trigger');
     const closeBtn = document.getElementById('close-modal');
 
-    if (!btn) return;
+    if (!btn || !modal) return;
 
-    btn.addEventListener('click', () => {
+    // Función para abrir con GSAP
+    const abrirModal = () => {
         modal.classList.remove('hidden');
         gsap.timeline()
             .to(modalOverlay, { opacity: 1, duration: 0.3 })
             .to(modalCard, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
-    });
+    };
 
-    const cerrar = () => {
+    // Función para cerrar con GSAP
+    const cerrarModal = () => {
         gsap.timeline({ onComplete: () => modal.classList.add('hidden') })
             .to(modalCard, { opacity: 0, scale: 0.8, duration: 0.3, ease: "power2.in" })
             .to(modalOverlay, { opacity: 0, duration: 0.2 }, "-=0.1");
     };
 
-    closeBtn?.addEventListener('click', cerrar);
-    modalOverlay?.addEventListener('click', cerrar);
+    btn.addEventListener('click', abrirModal);
+    closeBtn?.addEventListener('click', cerrarModal);
+    modalOverlay?.addEventListener('click', cerrarModal);
 }

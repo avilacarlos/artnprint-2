@@ -1,217 +1,95 @@
+/**
+ * TEXTOS Y ESTRUCTURA PARA INVITACIONES FÍSICAS
+ */
 export const templateFisicas = `
-  <div class="space-y-6 w-full px-6">
-    <h4 class="text-[#b34f83] font-[play] text-[1.75rem] font-bold uppercase">La elegancia de lo tangible</h4>
-    <p class="text-gray-500 text-[1.2rem] text-justify font-[one]">
-      Creamos invitaciones únicas y personalizadas...
-    </p>
+  <div class="space-y-6 w-full py-4 animate-fadeIn">
+    <div class="px-6 text-center">
+         <div class="relative">
+      <p class="text-gray-500 text-[1.1rem] font-[one] mt-4 text-justify">
+        Creamos invitaciones únicas y personalizadas para todo tipo de evento, desde diseños originales y poco convencionales que sorprenderán a tus invitados, hasta invitaciones discretas, elegantes y clásicas que reflejan el estilo de tu evento.
+      </p>
 
-    <div class="swiper fisicasSwiper w-full">
-  <div id="track-fisicas" class="swiper-wrapper">
-         <!-- Se llena dinámicamente -->
-      </div>
-      <div class="swiper-pagination !relative !mt-4"></div>
+      <p class="text-gray-500 text-[1.1rem] font-[one] mt-4 text-justify">
+        Somos expertos y trabajaremos contigo para crear la invitación que se adapte a tus necesidades y refleje el estilo y la personalidad de tu evento. Utilizamos materiales de alta calidad y técnicas clásicas y modernas de impresión para asegurarnos de que tus invitaciones encantarán y dejaran una impresión duradera en tus invitados.
+      </p>
+      <img src="flor01.svg" alt="Decoración" class="w-[75%] h-auto opacity-50 absolute bottom-0 -right-10 z-[-1]">
+    </div>
+    </div>
+
+    <!-- Galería 3D -->
+    <div class="swiper ap-modular-swiper w-full">
+        <div id="track-fisicas" class="swiper-wrapper"></div>
+        <div class="ap-pagination swiper-pagination"></div>
     </div>
   </div>
 `;
 
+/**
+ * TEXTOS Y ESTRUCTURA PARA OTRAS CATEGORÍAS (Ejemplo: Vasos)
+ * Puedes copiar y pegar esto para Tazas, Recuerdos, etc.
+ */
+export const templateVasos = `
+  <div class="space-y-6 w-full py-4 animate-fadeIn">
+    <div class="px-6 text-center">
+      <h4 class="text-[#b34f83] font-[play] text-[1.75rem] font-bold uppercase leading-tight">Vasos Personalizados</h4>
+      <p class="text-gray-500 text-[1.1rem] font-[one] mt-4 text-center">
+        Un recuerdo útil y moderno para tus invitados. Personalizamos cada detalle.
+      </p>
+    </div>
+
+    <div class="swiper ap-modular-swiper w-full">
+        <div id="track-vasos" class="swiper-wrapper"></div>
+        <div class="ap-pagination swiper-pagination"></div>
+    </div>
+  </div>
+`;
+
+
 export const templateDigitales = `
-<div class="space-y-6 w-full px-4"> <!-- Bajamos un poco el px para ganar espacio interno -->
+<div class="space-y-6 w-full px-4 animate-fadeIn">
     <h4 class="text-[#b34f83] font-[play] font-bold text-[1.75rem] uppercase leading-tight">Interactividad y modernidad</h4>
     
     <div class="space-y-4 text-gray-500 text-[1.1rem] text-justify font-[one] leading-relaxed">
-      <p>Sabemos lo importante que es para ti que cada detalle de tu evento sea único y especial.</p>
-      <p>Estas invitaciones no solo te permiten ser más respetuoso con el medio ambiente, sino que también te brindan la oportunidad de diseñar algo verdaderamente personal.</p>
-      <p>Con nuestras opciones digitales, puedes incluir animaciones, música, y enlaces interactivos.</p>
+      <p>Nuestras opciones digitales te brindan la oportunidad de diseñar algo verdaderamente personal con animaciones, música y enlaces interactivos.</p>
     </div>
     
-    <!-- CARD DE BONDADES CORREGIDA -->
-    <div class="w-full h-auto bg-white p-5 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
-       <p class="text-[1.1rem] uppercase tracking-widest text-gray-400 mb-6 text-center font-bold">Bondades Digitales</p>
+    <!-- CARD DE BONDADES -->
+    <div class="w-full h-auto bg-white p-5 rounded-3xl border border-[#b34f8310] shadow-sm flex flex-col gap-6">
+       <p class="text-[1.1rem] uppercase tracking-widest text-gray-400 text-center font-bold">Bondades Digitales</p>
        
-       <!-- ITEM ENTREGA -->
-       <div class="flex items-start w-full mb-6 gap-4">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="cal.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0"> <!-- min-w-0 es clave para que el texto respete el ancho -->
-            <div class="item-titulo">Entrega rápida</div>
-            <div class="item-texto">Podemos entregar entre 3 y 8 días</div>
-          </div>
-       </div>
-
-       <!-- ITEM TEMATICA -->
-       <div class="flex items-start w-full mb-6 gap-4">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">TEMATICA</div>
-            <div class="item-texto">
-            Elige la temática que mejor refleje tu evento: romántica, moderna, clásica o festiva.</div>
-          </div>
-       </div>
-
-       <!-- ITEM CUENTA -->
-       <div class="flex items-start w-full mb-6 gap-4">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="reloj.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">Cuenta regresiva</div>
-            <div class="item-texto">Reloj en tiempo real para la fecha y hora del evento.</div>
-          </div>
-       </div>
-
-       <!-- ITEM GPS -->
-       <div class="flex items-start w-full gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="gps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">Ubicación GPS</div>
-            <div class="item-texto">Indicaciones exactas para llegar a la iglesia y al salón.</div>
-          </div>
-       </div>
-       
-       <!-- ITEM RSVP -->
-       <div class="flex items-start w-full gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">RSVP</div>
-            <div class="item-texto">
-            Tendras todas las confirmaciones de tus invitados en un solo lugar.</div>
-          </div>
-       </div>
-       
-       <!-- ITEM DRESSCODE -->
-       <div class="flex items-start w-full gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">DRESS CODE</div>
-            <div class="item-texto">
-            Informa a tus invitados del tipo de vestimenta que deben usar.</div>
-          </div>
-       </div>
-
-       <!-- ITEM FOTOS -->
-       <div class="flex items-start w-full gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">FOTOGRAFÍAS</div>
-            <div class="item-texto">
-            La invitación puede llevar fotografías para dar un toque íntimo y especial a tu invitación.</div>
-          </div>
-       </div>
-
-       <!-- ITEM MUSICA -->
-       <div class="flex items-start w-full gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">MUSICA</div>
-            <div class="item-texto">
-            Agrega la canción perfecta para ambientar tu invitación.</div>
-          </div>
-       </div>
-
-       <!-- ITEM PERSONALIZACION -->
-       <div class="flex items-start w-full gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">PERSONALIZACION</div>
-            <div class="item-texto">
-            Cada invitación lleva el nombre de tu invitado, creando un detalle exclusivo y especial.</div>
-          </div>
-       </div>
-
-       <!-- ITEM GALERIA COMPARTIDA -->
-       <div class="flex items-start w-full gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">GALERIA COMPARTIDA</div>
-            <div class="item-texto">
-            Un espacio exclusivo donde tus invitados suben y disfrutan las fotos del gran día.</div>
-          </div>
-       </div>
-
-       <!-- ITEM ENVIO -->
-       <div class="flex items-start w-full gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 flex justify-center items-center bg-[#b34f8310] rounded-xl p-2">
-            <img class="w-full h-full object-contain" src="maps.svg" alt="icono">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="item-titulo">ENVIO ILIMITADO</div>
-            <div class="item-texto">
-            Envía tu invitación por WhatsApp tantas veces como quieras, sin restricciones.</div>
-          </div>
-       </div>
-
-
-
+       ${renderItem('Entrega rápida', 'Podemos entregar entre 3 y 8 días', 'cal.svg')}
+       ${renderItem('RSVP', 'Confirmaciones de tus invitados en un solo lugar', 'maps.svg')}
+       ${renderItem('Ubicación GPS', 'Indicaciones exactas para la iglesia y el salón', 'gps.svg')}
+       ${renderItem('Envío Ilimitado', 'Envía por WhatsApp tantas veces como quieras', 'maps.svg')}
     </div>
 
-    <!-- Botones a Demos -->
-    <p class="titulo-derecha">
-    ejemplos de nuestras invitaciones
-        </p>
-    <div class="flex flex-col gap-4  w-full items-center">
-
+    <p class="titulo-derecha mt-8">Ejemplos de demos</p>
     
-
-
-      
-      <!-- Boton basico -->  
-      <div class="w-full h-auto bg-[#ffffff50] p-4  rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
-        
-        <p class="textos-btn-digital">
-        Esta invitación se personaliza con los detalles del evento y puede incluir los personajes favoritos del festejado, creando una experiencia alegre y cercana.</p>
-        
-        <p class="textos-btn-digital">
-         Perfecta para Bautizos, Primeras Comuniones y fiestas infantiles.</p>
-
-         <a href="https://sobre-fatima.netlify.app/" target="_blank" class="titulo-btn">
-        Invitación Basica
-        </a>
-      </div>
-
-      <!-- Boton estandar -->  
-      <div class="w-full h-auto bg-[#ffffff50] p-4 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
-        
-        <p class="textos-btn-digital">
-        Ideal para quienes buscan un diseño más elaborado y emotivo, con animaciones suaves, transiciones encantadoras y una presentación envolvente.</p>
-        
-        <p class=" textos-btn-digital">
-         Ofrece una experiencia cuidada y profesional, sin requerir los elementos más complejos de la opción premium. Es perfecta para Bodas y XV Años con pocos invitados donde se quiere transmitir calidez y estilo.</p>
-
-         <a href="https://sobre-fatima.netlify.app/" target="_blank" class="titulo-btn">
-        Invitación Estandar
-        </a>
-      </div>
-      
-      <!-- Boton premium -->  
-      <div class="w-full h-auto bg-[#ffffff50] p-4 rounded-2xl border border-[#b34f8320] shadow-inner flex flex-col items-center">
-        
-        <p class=" textos-btn-digital">
-        La experiencia más completa, recomendada para Bodas y XV Años con muchos invitados.</p>
-        
-        <p class=" textos-btn-digital">
-         Incluye efectos, animaciones avanzadas, música, formulario para confirmar asistencia, galeria de fotos, acceso a la mesa de regalos con tan solo un click, haciendo que cada invitado se sienta especial.</p>
-         <a href="https://pruebaboda.netlify.app/" target="_blank" class="titulo-btn">
-        Invitación Premium
-        </a>
-      </div>
+    <div class="flex flex-col gap-4 w-full">
+      ${renderDemoBtn('Invitación Básica', 'Ideal para Bautizos y Cumpleaños', 'https://sobre-fatima.netlify.app/')}
+      ${renderDemoBtn('Invitación Premium', 'Experiencia completa para Bodas y XV', 'https://pruebaboda.netlify.app/')}
     </div>
-  </div>      
 </div>
 `;
+
+// Funciones auxiliares para no repetir tanto código HTML
+function renderItem(titulo, texto, icon) {
+    return `
+    <div class="flex items-start gap-4">
+        <div class="flex-shrink-0 w-12 h-12 bg-[#b34f8308] rounded-2xl flex items-center justify-center p-2">
+            <img src="${icon}" class="w-full h-full object-contain">
+        </div>
+        <div>
+            <div class="item-titulo text-[#b34f83] font-bold uppercase text-[1rem]">${titulo}</div>
+            <div class="item-texto text-gray-400 text-[0.9rem]">${texto}</div>
+        </div>
+    </div>`;
+}
+
+function renderDemoBtn(titulo, desc, link) {
+    return `
+    <div class="w-full bg-white p-5 rounded-3xl border border-[#b34f8310] shadow-sm flex flex-col items-center text-center">
+        <p class="text-gray-500 font-[one] mb-4">${desc}</p>
+        <a href="${link}" target="_blank" class="titulo-btn">${titulo}</a>
+    </div>`;
+}
