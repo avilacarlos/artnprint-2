@@ -52,12 +52,13 @@ export const templateDigitales = `
 <div class="space-y-6 w-full px-4 animate-fadeIn">
     <h4 class="text-[#b34f83] font-[play] font-bold text-[1.75rem] uppercase leading-tight">Interactividad y modernidad</h4>
     <div class="w-full h-auto bg-white p-6 rounded-[2.5rem] border border-[#b34f8310] shadow-sm flex flex-col items-center">
-       ${renderBondad('Entrega rápida', 'Podemos entregar entre 3 y 8 días.', 'cal.svg')}
-       ${renderBondad('Confirmación RSVP', 'Gestiona tus invitados en un solo lugar.', 'maps.svg')}
-       ${renderBondad('Ubicación GPS', 'Indicaciones exactas para la iglesia y el salón.', 'gps.svg')}
+       ${renderBondad('Entrega rápida', 'Podemos entregar entre 3 y 8 días.', '/cal.svg')}
+       ${renderBondad('Confirmación RSVP', 'Gestiona tus invitados en un solo lugar.', '/rsvp.svg')}
+       ${renderBondad('Ubicación GPS', 'Indicaciones exactas para la iglesia y el salón.', '/gps.svg')}
     </div>
     <div class="flex flex-col gap-6 w-full items-center mt-8">
       ${renderDemoBtn('Invitación Básica', 'Ideal para Bautizos y Cumpleaños.', 'https://bautizobasico.netlify.app/')}
+      ${renderDemoBtn('Invitación Estandar', 'Ideal para Bautizos y Cumpleaños.', 'https://bautizobasico.netlify.app/')}
       ${renderDemoBtn('Invitación Premium', 'La experiencia más completa.', 'https://pruebaboda.netlify.app/')}
     </div>
 </div>
