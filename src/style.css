@@ -164,3 +164,25 @@
   margin-top: 20px !important;
   text-align: center;
 }
+
+.titulo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b34f83; /* El rosa de tu marca */
+  color: white;
+  width: 85%;
+  padding: 12px 0;
+  margin-top: 15px;
+  border-radius: 1rem; /* rounded-2xl */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.titulo-btn:active {
+  transform: scale(0.95); /* Efecto de presionado */
+}
